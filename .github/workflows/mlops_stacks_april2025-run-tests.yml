@@ -11,9 +11,9 @@ defaults:
     working-directory: ./mlops_stacks_april2025/
 
 env:
-  ARM_TENANT_ID: ${{ secrets.STAGING_AZURE_SP_TENANT_ID }}
-  ARM_CLIENT_ID: ${{ secrets.STAGING_AZURE_SP_APPLICATION_ID }}
-  ARM_CLIENT_SECRET: ${{ secrets.STAGING_AZURE_SP_CLIENT_SECRET }}
+  DATABRICKS_HOST: https://adb-984752964297111.11.azuredatabricks.net
+  DATABRICKS_CLIENT_ID: ${{secrets.STAGING_AZURE_SP_APPLICATION_ID}}
+  DATABRICKS_CLIENT_SECRET: ${{secrets.STAGING_AZURE_SP_CLIENT_SECRET}}
   
 
 concurrency: mlops_stacks_april2025-training-integration-test-staging
